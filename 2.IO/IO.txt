@@ -1,0 +1,226 @@
+A=[1,2,4;3,5,7;9,8,5]
+
+A =
+
+     1     2     4
+     3     5     7
+     9     8     5
+
+B=[1,2;3,4]
+
+B =
+
+     1     2
+     3     4
+
+C=A^2
+
+C =
+
+    43    44    38
+    81    87    82
+    78    98   117
+
+save("all.txt")
+save("all.xls")
+save("all.mat")
+uiimport('D:\Codes\matlab\exercise\2.IO\all.mat',1)
+xlswrite("all2.xls")
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 168)" style="font-weight:bold">xlswrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',168,0)">第 168 行</a>)
+输入参数的数目不足。
+} 
+help xlswrite
+xlswrite - （不推荐）写入 Microsoft Excel 电子表格文件
+
+    此 MATLAB 函数 将矩阵 A 写入 Microsoft Excel 电子表格工作簿 filename 中的第一个工作表，从单元格 A1 开始写入。
+
+    xlswrite(filename,A)
+    xlswrite(filename,A,sheet)
+    xlswrite(filename,A,xlRange)
+    xlswrite(filename,A,sheet,xlRange)
+    status = xlswrite(___)
+    [status,message] = xlswrite(___)
+
+    另请参阅 <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/dlmwrite.html">dlmwrite</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/writecell.html">writecell</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/writematrix.html">writematrix</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/writetable.html">writetable</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/xlsfinfo.html">xlsfinfo</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/xlsread.html">xlsread</a>
+
+    <a href="matlab:doc xlswrite">xlswrite 的文档</a>
+
+save("C.mat",C)
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save')" style="font-weight:bold">save</a>
+必须为文本标量。
+} 
+save("C.mat",'C')
+load('C.mat')
+xlswrite('C.xls',C)
+xlswrite("C.xls",C,1)
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 224)" style="font-weight:bold">xlswrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',224,0)">第 224 行</a>)
+文件 D:\Codes\matlab\exercise\2.IO\C.xls 不可写。它可能被其他进程锁定。
+} 
+xlswrite("C2.xls",C,1)
+xlswrite("C2.xls",C,2,'C4')
+[警告: 已添加指定的工作表。] 
+[> 位置：<a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite>activate_sheet', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 298)" style="font-weight:bold">xlswrite>activate_sheet</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',298,0)">第 298 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite/ExecuteWrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 264)" style="font-weight:bold">xlswrite/ExecuteWrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',264,0)">第 264 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 218)" style="font-weight:bold">xlswrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',218,0)">第 218 行</a>)] 
+xlswrite("C3.xls",C,2,'C4')
+[警告: 已添加指定的工作表。] 
+[> 位置：<a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite>activate_sheet', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 298)" style="font-weight:bold">xlswrite>activate_sheet</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',298,0)">第 298 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite/ExecuteWrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 264)" style="font-weight:bold">xlswrite/ExecuteWrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',264,0)">第 264 行</a>)
+位置: <a href="matlab:matlab.internal.language.introspective.errorDocCallback('xlswrite', 'D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m', 218)" style="font-weight:bold">xlswrite</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\xlswrite.m',218,0)">第 218 行</a>)] 
+save("A.txt",'A')
+clc
+clear
+load("A.txt")
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+无法读取文件 'A.txt'。输入必须为 MAT 文件或包含每行列数相同的数值数据的 ASCII 文件。
+} 
+load("c.mat")
+clear
+load("all.mat"
+ load("all.mat"
+               ↑
+{错误: 表达式无效。调用函数或对变量进行索引时，请使用圆括号。否则，请检查不匹配的分隔符。
+} 
+load("all.mat")
+clear
+xlsread("C.xls")
+
+ans =
+
+    43    44    38
+    81    87    82
+    78    98   117
+
+xlsread("C2.xls")
+
+ans =
+
+    43    44    38
+    81    87    82
+    78    98   117
+
+xlsread("C3.xls")
+
+ans =
+
+     []
+
+xlsread("C3.xls",2)
+
+ans =
+
+    43    44    38
+    81    87    82
+    78    98   117
+
+load("all.mat")
+dlmwrite("B.txt"B)
+ dlmwrite("B.txt"B)
+                 ↑
+{错误: 表达式无效。请检查缺失的乘法运算符、缺失或不对称的分隔符或者其他语法错误。要构造矩阵，请使用
+方括号而不是圆括号。
+} 
+dlmwrite("B.txt",B)
+clear
+load("B.txt")
+dlmwrite("BBB.txt",B)
+load("BBB.txt")
+% 说明txt文件名就是变量名
+importdata("DIY.txt")
+
+ans =
+
+  3×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> 数组
+
+    {'123，43654，1234' }
+    {'546，213，1234567'}
+    {'34，876，23'      }
+
+importdata("DIY2.txt")
+
+ans =
+
+     3     8     3     8
+     3     5     8   NaN
+     1   NaN   NaN   NaN
+     3   NaN   NaN   NaN
+
+readmatrix("DIY2.txt")
+
+ans =
+
+     3     5     8
+     1   NaN   NaN
+     3   NaN   NaN
+
+readmatrix("DIY.txt")
+
+ans =
+
+   NaN
+   NaN
+   NaN
+
+readcell("DIY2.txt")
+
+ans =
+
+  4×4 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> 数组
+
+    {[3]}    {[        8]}    {[        3]}    {[        8]}
+    {[3]}    {[        5]}    {[        8]}    {1×1 missing}
+    {[1]}    {1×1 missing}    {1×1 missing}    {1×1 missing}
+    {[3]}    {1×1 missing}    {1×1 missing}    {1×1 missing}
+
+readcell("DIY.txt")
+
+ans =
+
+  3×1 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> 数组
+
+    {'123，43654，1234' }
+    {'546，213，1234567'}
+    {'34，876，23'      }
+
+%元胞数组！！！
+readcell("all.mat")
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readcell', 'D:\Matlab2021b\toolbox\matlab\iofun\readcell.m', 151)" style="font-weight:bold">readcell</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\readcell.m',151,0)">第 151 行</a>)
+文件扩展名 '.mat' 不是 'text' 或 'spreadsheet' 文件类型的已知文件扩展名。
+要指定文件类型，请将 'FileType' 与 'text' 或 'spreadsheet' 结合使用。例如:
+
+ opts = detectImportOptions(filename, 'FileType', 'spreadsheet')
+} 
+readcell("all.xls")
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readcell', 'D:\Matlab2021b\toolbox\matlab\iofun\readcell.m', 151)" style="font-weight:bold">readcell</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\readcell.m',151,0)">第 151 行</a>)
+无法将文件 'D:\Codes\matlab\exercise\2.IO\all.xls' 作为工作簿打开。请确认该文件存在，提供
+了读取访问权限，并且文件为有效的电子表格文件。
+} 
+readcell("C.xls")
+
+ans =
+
+  3×3 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> 数组
+
+    {[43]}    {[44]}    {[ 38]}
+    {[81]}    {[87]}    {[ 82]}
+    {[78]}    {[98]}    {[117]}
+
+readmatrix("C.xls")
+
+ans =
+
+    43    44    38
+    81    87    82
+    78    98   117
+
+readmatrix("C3.xls")
+
+ans =
+
+     []
+
+readmatrix("C3.xls",2)
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readmatrix', 'D:\Matlab2021b\toolbox\matlab\iofun\readmatrix.m', 157)" style="font-weight:bold">readmatrix</a> (<a href="matlab: opentoline('D:\Matlab2021b\toolbox\matlab\iofun\readmatrix.m',157,0)">第 157 行</a>)
+所有参数都必须具有关联的值。
+} 
+diary off

@@ -1,0 +1,284 @@
+help elfun
+  Elementary math functions.
+ 
+  Trigonometric.
+    <a href="matlab:help sin">sin</a>         - Sine.
+    <a href="matlab:help sind">sind</a>        - Sine of argument in degrees.
+    <a href="matlab:help sinh">sinh</a>        - Hyperbolic sine.
+    <a href="matlab:help asin">asin</a>        - Inverse sine.
+    <a href="matlab:help asind">asind</a>       - Inverse sine, result in degrees.
+    <a href="matlab:help asinh">asinh</a>       - Inverse hyperbolic sine.
+    <a href="matlab:help cos">cos</a>         - Cosine.
+    <a href="matlab:help cosd">cosd</a>        - Cosine of argument in degrees.
+    <a href="matlab:help cosh">cosh</a>        - Hyperbolic cosine.
+    <a href="matlab:help acos">acos</a>        - Inverse cosine.
+    <a href="matlab:help acosd">acosd</a>       - Inverse cosine, result in degrees.
+    <a href="matlab:help acosh">acosh</a>       - Inverse hyperbolic cosine.
+    <a href="matlab:help tan">tan</a>         - Tangent.
+    <a href="matlab:help tand">tand</a>        - Tangent of argument in degrees.
+    <a href="matlab:help tanh">tanh</a>        - Hyperbolic tangent.
+    <a href="matlab:help atan">atan</a>        - Inverse tangent.
+    <a href="matlab:help atand">atand</a>       - Inverse tangent, result in degrees.
+    <a href="matlab:help atan2">atan2</a>       - Four quadrant inverse tangent.
+    <a href="matlab:help atan2d">atan2d</a>      - Four quadrant inverse tangent, result in degrees.
+    <a href="matlab:help atanh">atanh</a>       - Inverse hyperbolic tangent.
+    <a href="matlab:help sec">sec</a>         - Secant.
+    <a href="matlab:help secd">secd</a>        - Secant of argument in degrees.
+    <a href="matlab:help sech">sech</a>        - Hyperbolic secant.
+    <a href="matlab:help asec">asec</a>        - Inverse secant.
+    <a href="matlab:help asecd">asecd</a>       - Inverse secant, result in degrees.
+    <a href="matlab:help asech">asech</a>       - Inverse hyperbolic secant.
+    <a href="matlab:help csc">csc</a>         - Cosecant.
+    <a href="matlab:help cscd">cscd</a>        - Cosecant of argument in degrees.
+    <a href="matlab:help csch">csch</a>        - Hyperbolic cosecant.
+    <a href="matlab:help acsc">acsc</a>        - Inverse cosecant.
+    <a href="matlab:help acscd">acscd</a>       - Inverse cosecant, result in degrees.
+    <a href="matlab:help acsch">acsch</a>       - Inverse hyperbolic cosecant.
+    <a href="matlab:help cot">cot</a>         - Cotangent.
+    <a href="matlab:help cotd">cotd</a>        - Cotangent of argument in degrees.
+    <a href="matlab:help coth">coth</a>        - Hyperbolic cotangent.
+    <a href="matlab:help acot">acot</a>        - Inverse cotangent.
+    <a href="matlab:help acotd">acotd</a>       - Inverse cotangent, result in degrees.
+    <a href="matlab:help acoth">acoth</a>       - Inverse hyperbolic cotangent.
+    <a href="matlab:help hypot">hypot</a>       - Square root of sum of squares.
+    <a href="matlab:help deg2rad">deg2rad</a>     - Convert angles from degrees to radians.
+    <a href="matlab:help rad2deg">rad2deg</a>     - Convert angles from radians to degrees.
+ 
+  Exponential.
+    <a href="matlab:help exp">exp</a>         - Exponential.
+    <a href="matlab:help expm1">expm1</a>       - Compute exp(x)-1 accurately.
+    <a href="matlab:help log">log</a>         - Natural logarithm.
+    <a href="matlab:help log1p">log1p</a>       - Compute log(1+x) accurately.
+    <a href="matlab:help log10">log10</a>       - Common (base 10) logarithm.
+    <a href="matlab:help log2">log2</a>        - Base 2 logarithm and dissect floating point number.
+    <a href="matlab:help pow2">pow2</a>        - Base 2 power and scale floating point number.
+    <a href="matlab:help realpow">realpow</a>     - Power that will error out on complex result.
+    <a href="matlab:help reallog">reallog</a>     - Natural logarithm of real number.
+    <a href="matlab:help realsqrt">realsqrt</a>    - Square root of number greater than or equal to zero.
+    <a href="matlab:help sqrt">sqrt</a>        - Square root.
+    <a href="matlab:help nthroot">nthroot</a>     - Real n-th root of real numbers.
+    <a href="matlab:help nextpow2">nextpow2</a>    - Next higher power of 2.
+ 
+  Complex.
+    <a href="matlab:help abs">abs</a>         - Absolute value.
+    <a href="matlab:help angle">angle</a>       - Phase angle.
+    <a href="matlab:help complex">complex</a>     - Construct complex data from real and imaginary parts.
+    <a href="matlab:help conj">conj</a>        - Complex conjugate.
+    <a href="matlab:help imag">imag</a>        - Complex imaginary part.
+    <a href="matlab:help real">real</a>        - Complex real part.
+    <a href="matlab:help unwrap">unwrap</a>      - Unwrap phase angle.
+    <a href="matlab:help isreal">isreal</a>      - True for real array.
+    <a href="matlab:help cplxpair">cplxpair</a>    - Sort numbers into complex conjugate pairs.
+ 
+  Rounding and remainder.
+    <a href="matlab:help fix">fix</a>         - Round towards zero.
+    <a href="matlab:help floor">floor</a>       - Round towards minus infinity.
+    <a href="matlab:help ceil">ceil</a>        - Round towards plus infinity.
+    <a href="matlab:help round">round</a>       - Round towards nearest integer.
+    <a href="matlab:help mod">mod</a>         - Modulus (signed remainder after division).
+    <a href="matlab:help rem">rem</a>         - Remainder after division.
+    <a href="matlab:help sign">sign</a>        - Signum.
+
+help sin
+sin - 参数的正弦，以弧度为单位
+
+    此 MATLAB 函数 返回 X 的元素的正弦。sin 函数按元素处理数组。该函数同时接受实数和复数输入。 对于 X 的实数值，sin(X) 返回区间 [-1,
+    1] 内的实数值。 对于 X 的复数值，sin(X) 返回复数值。
+
+    Y = sin(X)
+
+    另请参阅 <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/asin.html">asin</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/asind.html">asind</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/sind.html">sind</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/sinh.html">sinh</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/double.sinpi.html">sinpi</a>
+
+    <a href="matlab:doc sin">sin 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('sin')">名为 sin 的其他函数</a>
+
+pi
+
+ans =
+
+    3.1416
+
+sin(pi/2)
+
+ans =
+
+     1
+
+sind(90)
+
+ans =
+
+     1
+
+sind(180)
+
+ans =
+
+     0
+
+help sinh
+sinh - 双曲正弦
+
+    此 MATLAB 函数 返回 X 的元素的双曲正弦。sinh 函数按元素处理数组。该函数同时接受实数和复数输入。所有的角度都以弧度表示。
+
+    Y = sinh(X)
+
+    另请参阅 <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/asinh.html">asinh</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/cosh.html">cosh</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/sin.html">sin</a>
+
+    <a href="matlab:doc sinh">sinh 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('sinh')">名为 sinh 的其他函数</a>
+
+asin(1)
+
+ans =
+
+    1.5708
+
+asind(1)
+
+ans =
+
+    90
+
+exp(1)
+
+ans =
+
+    2.7183
+
+expml(1)
+{函数或变量 'expml' 无法识别。
+} 
+expm1(1)
+
+ans =
+
+    1.7183
+
+log(exp(1))
+
+ans =
+
+     1
+
+log10(100)
+
+ans =
+
+     2
+
+pow2(2)
+
+ans =
+
+     4
+
+sqrt(4)
+
+ans =
+
+     2
+
+abs(-1)
+
+ans =
+
+     1
+
+1+i
+
+ans =
+
+   1.0000 + 1.0000i
+
+abs(1+i)
+
+ans =
+
+    1.4142
+
+angle(10）
+ angle(10）
+         ↑
+{错误: 文本字符无效。请检查不受支持的符号、不可见的字符或非 ASCII 字符的粘贴。
+} 
+help angle
+angle - 相位角
+
+    此 MATLAB 函数 为复数数组 z 的每个元素返回区间 [-π,π] 中的相位角。theta 中的角度表示为 z =
+    abs(z).*exp(i*theta)。
+
+    theta = angle(z)
+
+    另请参阅 <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/abs.html">abs</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/atan2.html">atan2</a>, <a href="https://www.mathworks.com/help/releases/R2020b/matlab/ref/unwrap.html">unwrap</a>
+
+    <a href="matlab:doc angle">angle 的文档</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('angle')">名为 angle 的其他函数</a>
+
+angle(pi/2)
+
+ans =
+
+     0
+
+angle(1+i)
+
+ans =
+
+    0.7854
+
+pi/4
+
+ans =
+
+    0.7854
+
+complex(1,2)
+
+ans =
+
+   1.0000 + 2.0000i
+
+conj(ans)
+
+ans =
+
+   1.0000 - 2.0000i
+
+fix(0.3)
+
+ans =
+
+     0
+
+rem(12,5)
+
+ans =
+
+     2
+
+rem(13,5)
+
+ans =
+
+     3
+
+mod(-13,5)
+
+ans =
+
+     2
+
+mod(13,-5)
+
+ans =
+
+    -2
+
+rem(13,-5)
+
+ans =
+
+     3
+
+diary off
