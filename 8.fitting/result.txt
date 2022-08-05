@@ -1,0 +1,14 @@
+General model Exp2:
+     f(x) = a*exp(b*x) + c*exp(d*x)
+Coefficients (with 95% confidence bounds):
+       a =       3.007  (2.549, 3.465)
+       b =      -10.59  (-13.48, -7.692)
+       c =       2.889  (2.46, 3.318)
+       d =        -1.4  (-1.59, -1.21)
+
+Goodness of fit:
+  SSE: 0.1477
+  R-square: 0.9961
+  Adjusted R-square: 0.9955
+  RMSE: 0.09322
+
